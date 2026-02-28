@@ -1,6 +1,6 @@
 /*******************************************************************************
 THEME CONFIGURATION
-主题配置 - 深色/浅色模式切换
+主题配置 - 深色/浅色模式切换 (Black Metal / Fog styles)
 
 This file contains all styles related to light/dark theme switching.
 *******************************************************************************/
@@ -10,86 +10,108 @@ CSS CUSTOM PROPERTIES (Theme Variables)
 *******************************************************************************/
 
 :root {
-    /* Light mode colors (default) */
-    --theme-bg: #fffff8;
-    --theme-text: #111;
-    --theme-heading: #111;
-    --theme-code-bg: #f7f7f7;
-    --theme-code-text: inherit;
-    --theme-code-border: #e7e7e7;
-    --theme-pre-bg: #f7f7f7;
-    --theme-pre-border: #e0e0e0;
-    --theme-line-numbers-border: #ddd;
-    --theme-line-numbers-text: #aaa;
-    --theme-copy-btn-bg: #fff;
-    --theme-copy-btn-text: #666;
-    --theme-copy-btn-border: #ccc;
-    --theme-copy-btn-hover-bg: #f0f0f0;
-    --theme-copy-btn-hover-text: #333;
-    --theme-copy-btn-copied-bg: #e6fffa;
-    --theme-copy-btn-copied-text: #008000;
-    --theme-copy-btn-copied-border: #008000;
-    --theme-table-border: #ccc;
-    --theme-table-header-bg: #f5f5f5;
-    --theme-table-row-even: #fafafa;
-    --theme-table-row-hover: #f0f0f0;
+    /* BM Base Palette */
+    --bm-void: #0d0d0f;
+    --bm-ink: #1a1c20;
+    --bm-slate: #2d313a;
+    --bm-fog: #4a505e;
+    --bm-steel: #6b7280;
+    --bm-ghost: #7f8fa6;
+    --bm-mist: #9aa0ad;
+    --bm-haze: #c0c5ce;
+    --bm-frost: #d8dee9;
+    --bm-ice: #eceff4;
+    --bm-deep-blue: #3d4454;
+
+    /* Light mode colors (Fog weather theme) */
+    --theme-bg: #f5f5f5;
+    --theme-text: #4a505e;
+    --theme-heading: #2d313a;
+    --theme-code-bg: #e8eaed;
+    --theme-code-text: #2d313a;
+    --theme-code-border: #c0c5ce;
+    --theme-pre-bg: #e8eaed;
+    --theme-pre-border: #c0c5ce;
+    --theme-line-numbers-border: #c0c5ce;
+    --theme-line-numbers-text: #9aa0ad;
+    --theme-copy-btn-bg: #d8dce2;
+    --theme-copy-btn-text: #4a505e;
+    --theme-copy-btn-border: #c0c5ce;
+    --theme-copy-btn-hover-bg: #c0c5ce;
+    --theme-copy-btn-hover-text: #2d313a;
+    --theme-copy-btn-copied-bg: #c8d8d0;
+    --theme-copy-btn-copied-text: #2d4a3a;
+    --theme-copy-btn-copied-border: #2d4a3a;
+    --theme-table-border: #c0c5ce;
+    --theme-table-header-bg: #e8eaed;
+    --theme-table-row-even: #f0f0f0;
+    --theme-table-row-hover: #e0e3e7;
     --theme-math-filter: none;
+    
+    --highlight-weak: rgba(127, 143, 166, 0.15);
+    --highlight-strong: rgba(127, 143, 166, 0.3);
 }
 
-/* Dark mode variables */
+/* Dark mode variables (Black Metal theme) */
 html[data-theme="dark"],
 html:not([data-theme]) {
-    --theme-bg: #151515;
-    --theme-text: #ddd;
-    --theme-heading: #eee;
-    --theme-code-bg: #2d2d2d;
-    --theme-code-text: #e8e8e8;
-    --theme-code-border: #3d3d3d;
-    --theme-pre-bg: #2d2d2d;
-    --theme-pre-border: #3d3d3d;
-    --theme-line-numbers-border: #555;
-    --theme-line-numbers-text: #666;
-    --theme-copy-btn-bg: #333;
-    --theme-copy-btn-text: #ccc;
-    --theme-copy-btn-border: #555;
-    --theme-copy-btn-hover-bg: #444;
-    --theme-copy-btn-hover-text: #eee;
-    --theme-copy-btn-copied-bg: #1a4d3a;
-    --theme-copy-btn-copied-text: #5fda9d;
-    --theme-copy-btn-copied-border: #5fda9d;
-    --theme-table-border: #444;
-    --theme-table-header-bg: #333;
-    --theme-table-row-even: #2a2a2a;
-    --theme-table-row-hover: #383838;
+    --theme-bg: var(--bm-void);
+    --theme-text: var(--bm-mist);
+    --theme-heading: var(--bm-frost);
+    --theme-code-bg: var(--bm-ink);
+    --theme-code-text: var(--bm-ice);
+    --theme-code-border: var(--bm-slate);
+    --theme-pre-bg: var(--bm-ink);
+    --theme-pre-border: var(--bm-slate);
+    --theme-line-numbers-border: var(--bm-steel);
+    --theme-line-numbers-text: var(--bm-fog);
+    --theme-copy-btn-bg: var(--bm-slate);
+    --theme-copy-btn-text: var(--bm-mist);
+    --theme-copy-btn-border: var(--bm-steel);
+    --theme-copy-btn-hover-bg: var(--bm-fog);
+    --theme-copy-btn-hover-text: var(--bm-haze);
+    --theme-copy-btn-copied-bg: #1a232a;
+    --theme-copy-btn-copied-text: var(--bm-ghost);
+    --theme-copy-btn-copied-border: var(--bm-ghost);
+    --theme-table-border: var(--bm-slate);
+    --theme-table-header-bg: var(--bm-slate);
+    --theme-table-row-even: #121316;
+    --theme-table-row-hover: var(--bm-ink);
     --theme-math-filter: invert(1) hue-rotate(180deg);
+    
+    --highlight-weak: rgba(127, 143, 166, 0.12);
+    --highlight-strong: rgba(127, 143, 166, 0.25);
 }
 
-/* System preference: only apply dark variables when no explicit theme is set */
+/* System preference: only apply light variables when no explicit theme is set */
 @media (prefers-color-scheme: light) {
     html:not([data-theme]) {
-        --theme-bg: #fffff8;
-        --theme-text: #111;
-        --theme-heading: #111;
-        --theme-code-bg: #f7f7f7;
-        --theme-code-text: inherit;
-        --theme-code-border: #e7e7e7;
-        --theme-pre-bg: #f7f7f7;
-        --theme-pre-border: #e0e0e0;
-        --theme-line-numbers-border: #ddd;
-        --theme-line-numbers-text: #aaa;
-        --theme-copy-btn-bg: #fff;
-        --theme-copy-btn-text: #666;
-        --theme-copy-btn-border: #ccc;
-        --theme-copy-btn-hover-bg: #f0f0f0;
-        --theme-copy-btn-hover-text: #333;
-        --theme-copy-btn-copied-bg: #e6fffa;
-        --theme-copy-btn-copied-text: #008000;
-        --theme-copy-btn-copied-border: #008000;
-        --theme-table-border: #ccc;
-        --theme-table-header-bg: #f5f5f5;
-        --theme-table-row-even: #fafafa;
-        --theme-table-row-hover: #f0f0f0;
+        --theme-bg: #f5f5f5;
+        --theme-text: #4a505e;
+        --theme-heading: #2d313a;
+        --theme-code-bg: #e8eaed;
+        --theme-code-text: #2d313a;
+        --theme-code-border: #c0c5ce;
+        --theme-pre-bg: #e8eaed;
+        --theme-pre-border: #c0c5ce;
+        --theme-line-numbers-border: #c0c5ce;
+        --theme-line-numbers-text: #9aa0ad;
+        --theme-copy-btn-bg: #d8dce2;
+        --theme-copy-btn-text: #4a505e;
+        --theme-copy-btn-border: #c0c5ce;
+        --theme-copy-btn-hover-bg: #c0c5ce;
+        --theme-copy-btn-hover-text: #2d313a;
+        --theme-copy-btn-copied-bg: #c8d8d0;
+        --theme-copy-btn-copied-text: #2d4a3a;
+        --theme-copy-btn-copied-border: #2d4a3a;
+        --theme-table-border: #c0c5ce;
+        --theme-table-header-bg: #e8eaed;
+        --theme-table-row-even: #f0f0f0;
+        --theme-table-row-hover: #e0e3e7;
         --theme-math-filter: none;
+        
+        --highlight-weak: rgba(127, 143, 166, 0.15);
+        --highlight-strong: rgba(127, 143, 166, 0.3);
     }
 }
 
@@ -101,6 +123,7 @@ THEME STYLES (using CSS variables)
 html {
     background-color: var(--theme-bg) !important;
     color: var(--theme-text) !important;
+    font-family: 'Georgia', 'Times New Roman', serif;
 }
 
 body {
@@ -114,6 +137,8 @@ h3,
 h4,
 h5 {
     color: var(--theme-heading) !important;
+    font-weight: 200;
+    letter-spacing: 0.08em;
 }
 
 a,
@@ -125,6 +150,19 @@ a:visited {
     background-image: none !important;
     text-decoration: underline !important;
     text-underline-offset: 0.15em;
+    text-decoration-color: var(--bm-slate) !important;
+}
+
+a:hover {
+    color: var(--bm-ice) !important;
+    text-decoration-color: var(--bm-ghost) !important;
+}
+
+html[data-theme="light"] a:hover,
+@media (prefers-color-scheme: light) {
+    html:not([data-theme]) a:hover {
+        color: var(--bm-ghost) !important;
+    }
 }
 
 code {
@@ -164,10 +202,26 @@ pre>code {
     border-color: var(--theme-copy-btn-copied-border) !important;
 }
 
+div[style*="border-inline-start"] {
+    border-left: 3px solid var(--bm-ghost) !important;
+}
+
+html[data-theme="light"] div[style*="border-inline-start"],
+@media (prefers-color-scheme: light) {
+    html:not([data-theme]) div[style*="border-inline-start"] {
+        background: linear-gradient(to right, rgba(127, 143, 166, 0.1) 0%, transparent 100%);
+    }
+}
+
 div[style*="border-inline-start"] .footnote-ref,
 div[style*="border-inline-start"] .marginnote,
 div[style*="border-inline-start"] .footnote-ref a {
     color: var(--theme-heading) !important;
+}
+
+table {
+    border: 1px solid var(--theme-table-border);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
 
 table th,
@@ -178,6 +232,7 @@ table td {
 table th,
 table thead td {
     background-color: var(--theme-table-header-bg) !important;
+    font-weight: 400;
 }
 
 table tbody tr:nth-child(even) {
@@ -192,9 +247,55 @@ table tbody tr:hover {
     filter: var(--theme-math-filter) !important;
 }
 
+/* Custom Text Selection */
+::selection {
+    background-color: var(--bm-deep-blue);
+    color: var(--bm-ice);
+}
+
+::-moz-selection {
+    background-color: var(--bm-deep-blue);
+    color: var(--bm-ice);
+}
+
+html[data-theme="light"] ::selection,
+@media (prefers-color-scheme: light) {
+    html:not([data-theme]) ::selection {
+        background-color: var(--bm-ghost);
+        color: var(--bm-void);
+    }
+}
+
+html[data-theme="light"] ::-moz-selection,
+@media (prefers-color-scheme: light) {
+    html:not([data-theme]) ::-moz-selection {
+        background-color: var(--bm-ghost);
+        color: var(--bm-void);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-code-border);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--theme-text);
+}
+
 
 /*******************************************************************************
-THEME TOGGLE BUTTON (DeepWiki Style)
+THEME TOGGLE BUTTON
 *******************************************************************************/
 
 .theme-toggle-btn {
@@ -212,16 +313,15 @@ THEME TOGGLE BUTTON (DeepWiki Style)
     margin-right: 3em;
     margin-top: 1.6em;
     transition: background-color 0.15s ease;
-    color: #374151;
-    /* 浅色模式下月亮图标颜色 */
+    color: var(--theme-text);
 }
 
 .theme-toggle-btn:hover {
-    background: var(--highlight-weak, rgba(128, 128, 128, 0.2));
+    background: var(--highlight-weak);
 }
 
 .theme-toggle-btn:focus-visible {
-    outline: 2px solid var(--highlight-strong, rgba(128, 128, 128, 0.4));
+    outline: 2px solid var(--highlight-strong);
     outline-offset: 2px;
 }
 
@@ -230,7 +330,6 @@ THEME TOGGLE BUTTON (DeepWiki Style)
     height: 1.8rem;
 }
 
-/* 深色模式下太阳图标颜色 */
 .theme-toggle-btn.is-dark {
-    color: #d1d5db;
+    color: var(--theme-heading);
 }
