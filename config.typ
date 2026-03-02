@@ -12,7 +12,6 @@
     "/": "Home",
     "/Docs/": "Docs",
     "/Blog/": "Blog",
-    "/CV/": "CV",
     "/Notes/": "Note",    
   ),
   
@@ -38,7 +37,7 @@
   /// 自定义页脚元素列表 (content 数组)，显示在页面底部。
   footer-elements: (
     "© 2026 Defly ",
-    [Powered by #link("https://github.com/Defly's Blog. All rights reserved. /Tufted-Blog-Template")[Tufted-Blog-Template]],
+    [Powered by #link("https://github.com/Yousa-Mirage/Tufted-Blog-Template")[Tufted-Blog-Template]],
   ),
 )
 
