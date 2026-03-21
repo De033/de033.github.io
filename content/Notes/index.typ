@@ -5,3 +5,7 @@
 )
 
 = 笔记 / Notes
+- 高等动力学 Advanced Dynamics
+  - #link("Advanced_Dynamics_1/", "分析力学引论")
+  - #link("Advanced_Dynamics_2/", "广义坐标、Hamilton 原理与变分法")
+  - #link("Advanced_Dynamics_3/", "Euler-Lagrange 方程与算例分析")
