@@ -12,7 +12,7 @@
 ]
 
 
-= Defly's Blog
+= Writing homepage……but who's caring?
 
 很显然，或许也没那么显然，这里是Defly的博客，主要使用Typst编写，如果你喜欢，当然也可以用这个模板编写一个你自己的博客，非常感谢原模板的作者。
 
