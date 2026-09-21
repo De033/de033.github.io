@@ -3,7 +3,7 @@
 #import "@preview/tablem:0.3.0": *
 
 #import "@preview/cmarker:0.1.8"
-#import "@preview/mitex:0.2.6": *
+#import "@preview/mitex:0.2.7": *
 
 
 #show: template.with(

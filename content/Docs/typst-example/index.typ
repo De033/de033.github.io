@@ -3,7 +3,7 @@
 #import "@preview/tablem:0.3.0": *
 #import "@preview/citegeist:0.2.0": load-bibliography
 #import "@preview/cmarker:0.1.8"
-#import "@preview/mitex:0.2.6": *
+#import "@preview/mitex:0.2.7": *
 
 #show: template.with(
   title: "Typst 功能速览与样例",
@@ -498,7 +498,7 @@ Typst 不但是一个标记排版语言，还是一门编程排版语言：
 
 ```
 #import "@preview/cmarker:0.1.8"
-#import "@preview/mitex:0.2.6": *
+#import "@preview/mitex:0.2.7": *
 
 // 这个 scope 是必要的
 // 参见 https://typst.app/universe/package/cmarker#resolving-paths-correctly

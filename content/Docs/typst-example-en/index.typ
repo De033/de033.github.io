@@ -3,7 +3,7 @@
 #import "@preview/tablem:0.3.0": *
 #import "@preview/citegeist:0.2.0": load-bibliography
 #import "@preview/cmarker:0.1.8"
-#import "@preview/mitex:0.2.6": *
+#import "@preview/mitex:0.2.7": *
 
 #show: template.with(
   title: "Typst Example",
@@ -501,7 +501,7 @@ You can use `cmarker` to embed Markdown content in Typst documents. This is espe
 
 ```
 #import "@preview/cmarker:0.1.8"
-#import "@preview/mitex:0.2.6": *
+#import "@preview/mitex:0.2.7": *
 
 // This scope is required
 // See https://typst.app/universe/package/cmarker#resolving-paths-correctly

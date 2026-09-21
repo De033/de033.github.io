@@ -12,7 +12,7 @@
     "/": "Home",
     "/Docs/": "Docs",
     "/Blog/": "Blog",
-    "/Notes/": "Note",    
+    "/Notes/": "Note",
   ),
   
   /// 网站的站点标题。会显示在浏览器标签页以及 SEO/社交分享卡片中。
